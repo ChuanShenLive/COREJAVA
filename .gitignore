@@ -56,5 +56,4 @@ code/corejava/.project
 *.classpath
 
 */bin/*
-code/corejava/bin/RoadApplet.jar
-code/corejava/bin/RoadApplet.class
+code/corejava/bin/*
