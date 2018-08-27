@@ -20,5 +20,12 @@ public class Employee extends Person {
 		return hireDay;
 	}
 	
-	public String getD
+	public String getDescription() {
+		return String.format("an employee with a salary of $%.2f", salary);
+	}
+	
+	public void raiseSalary(double byPercent) {
+		double raise = salary * byPercent / 100;
+		salary += raise;
+	}
 }
