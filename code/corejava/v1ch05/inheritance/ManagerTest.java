@@ -19,6 +19,14 @@ public class ManagerTest {
 		staff[1] = new Employee("Harry Hacker", 50000, 1989, 10, 1);
 		staff[2] = new Employee("Tommy Tester", 40000, 1990, 3, 15);
 		
+		for (Employee e : staff) {
+			System.out.println(e.getClass());
+		}
+		
+		for (Employee e: staff) {
+			System.out.println(e instanceof Employee);
+		}
+		
 		// Manager[] managers = new Manager[10];
 		// Employee[] employees = managers;
 		
