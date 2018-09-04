@@ -6,8 +6,6 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Scanner;
 
-import com.sun.jmx.mbeanserver.ModifiableClassLoaderRepository;
-
 /**
  * This program uses reflection to print all features of a class.
  * @version 1.00 2018-09-03
@@ -16,6 +14,7 @@ import com.sun.jmx.mbeanserver.ModifiableClassLoaderRepository;
  */
 public class ReflectionTest {
 	
+	@SuppressWarnings({ "rawtypes"})
 	public static void main(String[] args) {
 		// read class name from command line args or user input
 		String name;
@@ -25,6 +24,7 @@ public class ReflectionTest {
 			Scanner in = new Scanner(System.in);
 			System.out.println("Enter class name (e.g. java.util.Date): ");
 			name = in.next();
+			in.close();
 		}
 		
 		try {
