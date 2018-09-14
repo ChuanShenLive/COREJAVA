@@ -15,6 +15,7 @@ import javax.swing.Timer;
  * @author ChuanShen
  */
 public class InnerClassTest {
+	@SuppressWarnings("serial")
 	public static void main(String[] args) {
 		int[] counter = new int[1];
 		Date[] dates = new Date[100];
