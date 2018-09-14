@@ -18,7 +18,7 @@ public class CloneTest {
 			System.out.println("copy=" + copy);
 			
 			Employee ep1 = new Employee("lv", 30000);
-			Employee ep2 = new Employee("chen", 30000);
+			// Employee ep2 = new Employee("chen", 30000);
 			Manager m1 = new Manager("sh", 30000, ep1);
 			Employee ep3 = m1;
 			Manager m2 = (Manager)m1.clone();
